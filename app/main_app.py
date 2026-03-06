@@ -40,4 +40,5 @@ signal.signal(signal.SIGINT, desativar_rotina)
 
 if __name__ == "__main__":
     logger.info("Scheduler iniciado...")
+    rotina()
     scheduler.start()
