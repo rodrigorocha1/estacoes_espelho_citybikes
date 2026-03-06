@@ -1,8 +1,8 @@
 from abc import ABC, abstractmethod
 from typing import Optional
 
-from ..contexto.contexto import Contexto
-from ..utlis.utlis_log import logger
+from app.contexto.contexto import Contexto
+from app.utlis.utlis_log import logger
 
 
 class Corrente(ABC):

@@ -1,0 +1,4 @@
+.venv
+minio-data
+pgdata
+docs
