@@ -123,22 +123,22 @@ services:
       timeout: 5s
       retries: 30
 
-  extracao:
-    image: python_extracao:latest
-    container_name: python-extracao
-    volumes:
-      - ./:/app
-    networks:
-      mlflow-network:
-        ipv4_address: 172.29.0.50
-    environment:
-      MLFLOW_TRACKING_URI: http://mlflow-server:${MLFLOW_PORT}
-      AWS_ACCESS_KEY_ID: ${MINIO_ROOT_USER}
-      AWS_SECRET_ACCESS_KEY: ${MINIO_ROOT_PASSWORD}
-      MLFLOW_S3_ENDPOINT_URL: ${MLFLOW_S3_ENDPOINT_URL}
-      TZ: America/Sao_Paulo
-    stdin_open: true
-    tty: true
+#  extracao:
+#    image: python_extracao:latest
+#    container_name: python-extracao
+#    volumes:
+#      - ./:/app
+#    networks:
+#      mlflow-network:
+#        ipv4_address: 172.29.0.50
+#    environment:
+#      MLFLOW_TRACKING_URI: http://mlflow-server:${MLFLOW_PORT}
+#      AWS_ACCESS_KEY_ID: ${MINIO_ROOT_USER}
+#      AWS_SECRET_ACCESS_KEY: ${MINIO_ROOT_PASSWORD}
+#      MLFLOW_S3_ENDPOINT_URL: ${MLFLOW_S3_ENDPOINT_URL}
+#      TZ: America/Sao_Paulo
+#    stdin_open: true
+#    tty: true
 
 networks:
   mlflow-network:

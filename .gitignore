@@ -1,3 +1,5 @@
 /.env
 .idea/*
 minio-data/*
+aulas/*
+conhecendo_tensorflow/*
