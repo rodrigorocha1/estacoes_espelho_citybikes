@@ -250,7 +250,7 @@ class AutoEncodersCitybikes(tf.Module):
             )
 
             print(
-                f"Epoch {epoch + 1}: mean_loss={epoch_loss:.6f}"
+                f"\nEpoch {epoch + 1}: mean_loss={epoch_loss:.6f}"
             )
 
             with self.writer.as_default():
